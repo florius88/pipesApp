@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
+
 import { AppRouterModule } from './app-router.module';
+import { SharedModule } from './shared/shared.module';
+import { VentasModule } from './ventas/ventas.module';
 
 // Modulo personalizado
 /* No se esta usando en este modulo
@@ -20,7 +22,8 @@ import { PrimeNGModule } from './prime-ng/prime-ng.module' */
         BrowserModule,
         /* PrimeNGModule, */
         AppRouterModule,
-        SharedModule
+        SharedModule,
+        VentasModule
     ]
 })
 export class AppModule { }
