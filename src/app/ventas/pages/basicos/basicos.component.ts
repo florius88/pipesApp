@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class BasicosComponent {
 
+  nombreLower: string = 'flor';
+  nombreUpper: string = 'FLOR';
+  nombreCompleto: string = 'flOr sAntoS';
+
 }
