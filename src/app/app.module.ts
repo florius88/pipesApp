@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -11,12 +11,19 @@ import { VentasModule } from './ventas/ventas.module';
 /* No se esta usando en este modulo
 import { PrimeNGModule } from './prime-ng/prime-ng.module' */
 
+// Cambiar el local de la app
+import localEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localEs);
+
 
 @NgModule({
     declarations: [
         AppComponent
     ],
-    providers: [],
+    providers: [
+        { provide: LOCALE_ID, useValue: 'es' }
+    ],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
