@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 
+  // i18nSelect
+  nombreFem: string = 'Flor';
+  generoUno: string = 'femenino';
+  nombreMas: string = 'Fernando';
+  generoDos: string = 'masculino';
+
+  invitacionMapa = {
+    'masculino': 'invitarlo',
+    'femenino': 'invitarla',
+    'other': 'invitarle'
+  }
+
+
 }

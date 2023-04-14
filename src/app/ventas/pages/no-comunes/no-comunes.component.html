@@ -11,7 +11,15 @@
 
         <p-fieldset legend="i18nSelectPipe" [toggleable]="true">
             <p class="m-0">
-                Lorem ipsum dolor sit amet
+
+                Saludos {{ nombreFem }}, es un placer 
+                {{ generoUno | i18nSelect:invitacionMapa }} 
+                a nuestro evento.
+                <br>
+                Saludos {{ nombreMas }}, es un placer 
+                {{ generoDos | i18nSelect:invitacionMapa }} 
+                a nuestro evento.
+
             </p>
         </p-fieldset>
 
