@@ -68,4 +68,18 @@
 
     </div>
 
+    <div class="col md:col-6 sm:col-9">
+
+        <p-fieldset legend="KeyValuePipe" [toggleable]="true">
+
+            <ul>
+                <li *ngFor="let item of persona | keyvalue">
+                    <b>{{ item.key | titlecase }}:</b> {{ item.value }}
+                </li>
+            </ul>
+           
+        </p-fieldset>
+
+    </div>
+
 </div>

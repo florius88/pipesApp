@@ -37,4 +37,11 @@ export class NoComunesComponent {
     this.clientes.pop();
   }
 
+  // KeyValuePipe
+  persona = {
+    nombre: 'Flor',
+    edad: 34,
+    direccion: 'Argamasilla, Ciudad Real'
+  }
+
 }
