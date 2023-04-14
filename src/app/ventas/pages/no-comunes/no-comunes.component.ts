@@ -44,4 +44,24 @@ export class NoComunesComponent {
     direccion: 'Argamasilla, Ciudad Real'
   }
 
+   // JsonPipe
+   heroes = [
+    {
+      nombre: 'Spiderman',
+      vuela: false
+    },
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+   ]
+
 }
