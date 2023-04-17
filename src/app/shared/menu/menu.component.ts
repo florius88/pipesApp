@@ -27,12 +27,12 @@ export class MenuComponent implements OnInit {
           {
             label: 'Números',
             icon: 'pi pi-dollar',
-            routerLink: ['numeros']
+            routerLink: ['numbers']
           },
           {
             label: 'No comunes',
             icon: 'pi pi-globe',
-            routerLink: ['no-comunes']
+            routerLink: ['uncommon']
           }
         ]
       },
