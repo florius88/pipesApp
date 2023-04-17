@@ -22,4 +22,47 @@
             {{ fullName | titlecase }}
         </p-card>
     </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="titlecase">
+            <ol>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date:'short'</li>
+                <li>fecha | date:'long'</li>
+                <li>fecha | date:'hh:mm, cccc dd of MMMM, yyyy GGGG'</li>
+            </ol>
+
+            <hr>
+
+            <ol>
+                <li>fecha | date:'long':'GMT-6' </li>
+                <li>fecha | date:'long':'GMT+7' </li>
+                <li>fecha | date:'long':'GMT-6':'en' </li>
+                <li>fecha | date:'long':'GMT-6':'fr' </li>
+            </ol>
+
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="titlecase">
+            <ol>
+                <li>{{ customDate }}</li>
+                <li>{{ customDate | date }}</li>
+                <li>{{ customDate | date:'short' }}</li>
+                <li>{{ customDate | date:'long' }}</li>
+                <li>{{ customDate | date:'hh:mm, cccc dd of MMMM, yyyy GGGG' }}</li>
+            </ol>
+
+            <hr>
+
+            <ol>
+                <li>{{ customDate | date:'long':'GMT-6' }}</li>
+                <li>{{ customDate | date:'long':'GMT+7' }}</li>
+                <li>{{ customDate | date:'long':'GMT-6':'en' }}</li>
+                <li>{{ customDate | date:'long':'GMT-6':'fr' }}</li>
+            </ol>
+        </p-card>
+    </div>
 </div>
