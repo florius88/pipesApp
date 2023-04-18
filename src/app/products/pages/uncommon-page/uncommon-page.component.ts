@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -25,14 +26,14 @@ export class UncommonPageComponent {
 
   // i18nPlural
   public clients: string[] = ['María', 'Pedro', 'Juan', 'Nacho'];
-  
+
   public clientsMaps = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos un cliente esperando',
     'other': 'tenemos # clientes esperando'
   }
 
-  deleteClient(){
+  deleteClient() {
     this.clients.pop();
   }
 
@@ -61,26 +62,16 @@ export class UncommonPageComponent {
       nombre: 'Aquaman',
       vuela: false
     }
-   ]
+  ]
 
+  // AsyncPipe
+  miObservable = interval(500); // crea un intervalo de numeros
 
-  /* 
-    
-    
-    
-  
-    
-  
-     
-  
-     // AsyncPipe
-     miObservable = interval(500); // crea un intervalo de numeros
-  
-     valorPromesa = new Promise( (resolve, reject) => {
-      setTimeout(()=> {
-        resolve('Tenemos data de promesa');
-      }, 6000 );
-     } );
-   */
+  valorPromesa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Tenemos data de promesa');
+    }, 6000);
+  });
+
 
 }
