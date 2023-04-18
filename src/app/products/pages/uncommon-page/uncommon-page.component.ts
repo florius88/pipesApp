@@ -36,6 +36,12 @@ export class UncommonPageComponent {
     this.clients.pop();
   }
 
+  // KeyValuePipe
+  person = {
+    nombre: 'Flor',
+    edad: 34,
+    direccion: 'Argamasilla, Ciudad Real'
+  }
 
 
   /* 
@@ -43,12 +49,7 @@ export class UncommonPageComponent {
     
     
   
-    // KeyValuePipe
-    persona = {
-      nombre: 'Flor',
-      edad: 34,
-      direccion: 'Argamasilla, Ciudad Real'
-    }
+    
   
      // JsonPipe
      heroes = [
