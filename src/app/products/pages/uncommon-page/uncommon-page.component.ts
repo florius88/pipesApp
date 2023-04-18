@@ -43,6 +43,26 @@ export class UncommonPageComponent {
     direccion: 'Argamasilla, Ciudad Real'
   }
 
+  // JsonPipe
+  heroes = [
+    {
+      nombre: 'Spiderman',
+      vuela: false
+    },
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+   ]
+
 
   /* 
     
@@ -51,25 +71,7 @@ export class UncommonPageComponent {
   
     
   
-     // JsonPipe
-     heroes = [
-      {
-        nombre: 'Spiderman',
-        vuela: false
-      },
-      {
-        nombre: 'Superman',
-        vuela: true
-      },
-      {
-        nombre: 'Robin',
-        vuela: false
-      },
-      {
-        nombre: 'Aquaman',
-        vuela: false
-      }
-     ]
+     
   
      // AsyncPipe
      miObservable = interval(500); // crea un intervalo de numeros
